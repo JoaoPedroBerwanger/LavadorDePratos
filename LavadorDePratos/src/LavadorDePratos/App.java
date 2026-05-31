@@ -14,7 +14,7 @@ public class App {
 
 	private static final int tamMaximoEscorredor = 10;
 	private static final long duracaoAPP = 2L * 60L * 1000L;
-	private static final Level nivelLog = Level.FINE;
+	private static final Level nivelLog = Level.INFO;
 
 	private static final Logger log = Logger.getLogger(App.class.getName());
 
@@ -33,7 +33,7 @@ public class App {
 
 	public void work() {
 		
-		log.info("Iniciando lavador e enxugador. Capacidade do escorredor=" + tamMaximoEscorredor);
+		log.info("Iniciando lavador e enxugador. Capacidade do escorredor= " + tamMaximoEscorredor);
 		
 		lavador = new Lavador(escorredor, factory);
 		enxugador = new Enxugador(escorredor);

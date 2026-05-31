@@ -10,9 +10,9 @@ public class Lavador implements Runnable {
 
 	private static final Logger log = Logger.getLogger(Lavador.class.getName());
 	
-	private static final long tempoSujeiraBaixa = 1000;
-	private static final long tempoSujeiraMedio = 2000;
-	private static final long tempoSujeiraEngordurado = 3000;
+	private static final long tempoSujeiraBaixa = 1;
+	private static final long tempoSujeiraMedio = 3;
+	private static final long tempoSujeiraEngordurado = 5;
 	
 	private final Escorredor escorredor;
 	private final PratosSujosFactory factory;
